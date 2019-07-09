@@ -77,6 +77,11 @@ body {
     font-size: 1.5em;
 }
 
+#super-center:hover{
+    transition: .3s;
+    background-color: #1f1f1f;
+}
+
 /*================================================================================*/
 /* Body and Main Content */
 /*================================================================================*/
@@ -171,9 +176,11 @@ body {
     padding: 0;
 }
 
+/*
 #social-section {
     display: inline-block;
 }
+*/
 
 .social-icon i {
     background: #fff;
@@ -187,6 +194,20 @@ body {
     padding: 10px;
     border-radius: 1000000px;
     color: #000;
+}
+.social-icon i:hover {
+    transition: .3s;
+    background: #000;
+    width: 20px;
+    height: 20px;
+
+    line-height: 20px;
+    white-space: nowrap;
+    text-align: center;
+
+    padding: 10px;
+    border-radius: 1000000px;
+    color: #fff;
 }
 
 #contact-info {
@@ -338,7 +359,7 @@ body {
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent transparent transparent #555;
+    border-color: transparent transparent transparent #2B2E34;
 }
 
 #skillsDisplay:hover .tooltiptext {
@@ -411,3 +432,47 @@ body {
     border-radius: 5px;
     margin-right: 10px;
 }
+
+#super-center {
+    margin-top: -10px;
+}
+
+#contact-info, #social-section {
+    text-align: center !important;
+}
+
+#social-section-top {
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#social-section-top a {
+    padding: 5px;
+}
+
+.row {
+    margin-left: 70px;
+}
+
+.codeBtn {
+    margin-left: 90px !important;
+    text-decoration: none !important;
+    border: 1px solid white;
+    border-radius: 5px !important;
+    padding: 3px !important;
+    
+}
+
+@media only screen and (max-width:1000px) {
+    .container {
+        width: 130% !important;
+        margin-left: -100px !important;
+        max-width: none !important;
+    }
+    .card {
+        margin-left: -5px;
+    }
+}
+ 
